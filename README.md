@@ -38,7 +38,7 @@ Alternatively, if the input is:
 
 1
 
-- 5
+-- 5
 
 3
 
