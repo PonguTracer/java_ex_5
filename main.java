@@ -1,25 +1,25 @@
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scnr = new Scanner(System.in);
-
-        String one = scnr.nextLine();
-        String two = scnr.nextLine();
-        String three = scnr.nextLine();
-        String sum = one + two + three;
-
-        if ((Integer.parseInt(one) < 0) || (Integer.parseInt(two) < 0) || Integer.parseInt(three) < 0) {
-            System.out.println("Invalid input!");
-            return;
-        }
-        int total = Integer.parseInt(sum);
-
-        if (total % 3 == 0) {
-            System.out.println(sum + " is divisible by 3!");
-        }
-        else {
-            System.out.println(sum + " is not divisible by 3!");
-        }
-    }
+public class LabProgram {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);         
+      /* Type your code here. */
+      int one, two, three, sum;
+      
+      one = scnr.nextInt();
+      two = scnr.nextInt();
+      three = scnr.nextInt();
+      
+      sum = one + two + three;
+      if (one < 0 || two < 0 || three < 0) {
+         System.out.println("Invalid input!");
+         return;    
+      }
+      sum = one * 100 + two * 10 + three * 1;
+      if (sum % 3 == 0) {
+         System.out.println(sum + " is divisible by 3!");
+      } else {
+         System.out.println(sum + " is not divisible by 3!");
+      }
+   }
 }
