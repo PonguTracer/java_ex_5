@@ -11,11 +11,13 @@ public class LabProgram {
       three = scnr.nextInt();
       
       sum = one + two + three;
+      
       if (one < 0 || two < 0 || three < 0) {
          System.out.println("Invalid input!");
          return;    
       }
       sum = one * 100 + two * 10 + three * 1;
+      
       if (sum % 3 == 0) {
          System.out.println(sum + " is divisible by 3!");
       } else {
